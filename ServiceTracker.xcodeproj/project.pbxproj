@@ -12,6 +12,8 @@
 		F54943221EF21ED100243D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54943201EF21ED100243D86 /* Main.storyboard */; };
 		F54943241EF21ED100243D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54943231EF21ED100243D86 /* Assets.xcassets */; };
 		F54943271EF21ED100243D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54943251EF21ED100243D86 /* LaunchScreen.storyboard */; };
+		F549432F1EF2255A00243D86 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549432E1EF2255A00243D86 /* LoginController.swift */; };
+		F54943311EF22B1B00243D86 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54943301EF22B1B00243D86 /* RegisterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F54943231EF21ED100243D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F54943261EF21ED100243D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F54943281EF21ED100243D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F549432E1EF2255A00243D86 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F54943301EF22B1B00243D86 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				F549431C1EF21ED100243D86 /* AppDelegate.swift */,
 				F549431E1EF21ED100243D86 /* ViewController.swift */,
+				F549432E1EF2255A00243D86 /* LoginController.swift */,
+				F54943301EF22B1B00243D86 /* RegisterController.swift */,
 				F54943201EF21ED100243D86 /* Main.storyboard */,
 				F54943231EF21ED100243D86 /* Assets.xcassets */,
 				F54943251EF21ED100243D86 /* LaunchScreen.storyboard */,
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54943311EF22B1B00243D86 /* RegisterController.swift in Sources */,
 				F549431F1EF21ED100243D86 /* ViewController.swift in Sources */,
+				F549432F1EF2255A00243D86 /* LoginController.swift in Sources */,
 				F549431D1EF21ED100243D86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +310,7 @@
 				F549432D1EF21ED100243D86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
