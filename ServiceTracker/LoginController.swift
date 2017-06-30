@@ -8,33 +8,34 @@
 
 import UIKit
 
-class LoginController: UIViewController
+class LoginController: UIViewController, UITextFieldDelegate
 {
-    @IBOutlet var loginTab: UITabBarItem!
-    @IBOutlet var loginTextField: UITextField!
+    @IBOutlet var isManager: UISwitch!
+    @IBOutlet var userIDTextField: UITextField!
+    @IBOutlet var pswdTextField: UITextField!
+    @IBOutlet var loginButton: UIButton!
     
-    override func viewDidLoad()
+    @IBAction func loginButtonClicked(_sender: Any)
     {
-        super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool)
-    {
-        let appearance = UITabBarItem.appearance()
-        let attributes: [String: AnyObject] = [NSFontAttributeName:UIFont(name: "Helvetica Neue", size: 14)!, NSForegroundColorAttributeName: UIColor.blue]
-        appearance.setTitleTextAttributes(attributes, for: .normal)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool)
-    {
-        let appearance = UITabBarItem.appearance()
-        let attributes: [String: AnyObject] = [NSFontAttributeName:UIFont(name: "Helvetica Neue", size: 14)!, NSForegroundColorAttributeName: UIColor.gray]
-        appearance.setTitleTextAttributes(attributes, for: .normal)
+        if isManager.isOn
+        {
+            performSegue(withIdentifier: "managerLoginSegue", sender: loginButton)
+        }
+        else
+        {
+            performSegue(withIdentifier: "employeeLoginSegue", sender: loginButton)
+        }
     }
     
     @IBAction func dismissKeyboard(_sender: UITapGestureRecognizer)
     {
-        loginTextField.resignFirstResponder()
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        textField.resignFirstResponder()
+        return true
     }
 }
 

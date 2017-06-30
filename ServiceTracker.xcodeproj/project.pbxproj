@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5016BA01F058DDB005C5767 /* EmployeeChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5016B9F1F058DDB005C5767 /* EmployeeChangePassword.swift */; };
+		F5016BA21F058E01005C5767 /* ManagerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5016BA11F058E01005C5767 /* ManagerHomeView.swift */; };
+		F5307C321F05C76D00156C53 /* EmployeeHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5307C311F05C76D00156C53 /* EmployeeHomeView.swift */; };
 		F549431D1EF21ED100243D86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549431C1EF21ED100243D86 /* AppDelegate.swift */; };
 		F549431F1EF21ED100243D86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549431E1EF21ED100243D86 /* ViewController.swift */; };
 		F54943221EF21ED100243D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54943201EF21ED100243D86 /* Main.storyboard */; };
 		F54943241EF21ED100243D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54943231EF21ED100243D86 /* Assets.xcassets */; };
 		F54943271EF21ED100243D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54943251EF21ED100243D86 /* LaunchScreen.storyboard */; };
 		F549432F1EF2255A00243D86 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549432E1EF2255A00243D86 /* LoginController.swift */; };
-		F54943311EF22B1B00243D86 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54943301EF22B1B00243D86 /* RegisterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F5016B9F1F058DDB005C5767 /* EmployeeChangePassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeChangePassword.swift; sourceTree = "<group>"; };
+		F5016BA11F058E01005C5767 /* ManagerHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerHomeView.swift; sourceTree = "<group>"; };
+		F5307C311F05C76D00156C53 /* EmployeeHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeHomeView.swift; sourceTree = "<group>"; };
 		F54943191EF21ED100243D86 /* ServiceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F549431C1EF21ED100243D86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F549431E1EF21ED100243D86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +30,6 @@
 		F54943261EF21ED100243D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F54943281EF21ED100243D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F549432E1EF2255A00243D86 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		F54943301EF22B1B00243D86 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 				F549431C1EF21ED100243D86 /* AppDelegate.swift */,
 				F549431E1EF21ED100243D86 /* ViewController.swift */,
 				F549432E1EF2255A00243D86 /* LoginController.swift */,
-				F54943301EF22B1B00243D86 /* RegisterController.swift */,
+				F5016B9F1F058DDB005C5767 /* EmployeeChangePassword.swift */,
+				F5307C311F05C76D00156C53 /* EmployeeHomeView.swift */,
+				F5016BA11F058E01005C5767 /* ManagerHomeView.swift */,
 				F54943201EF21ED100243D86 /* Main.storyboard */,
 				F54943231EF21ED100243D86 /* Assets.xcassets */,
 				F54943251EF21ED100243D86 /* LaunchScreen.storyboard */,
@@ -143,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F54943311EF22B1B00243D86 /* RegisterController.swift in Sources */,
+				F5016BA21F058E01005C5767 /* ManagerHomeView.swift in Sources */,
+				F5307C321F05C76D00156C53 /* EmployeeHomeView.swift in Sources */,
 				F549431F1EF21ED100243D86 /* ViewController.swift in Sources */,
+				F5016BA01F058DDB005C5767 /* EmployeeChangePassword.swift in Sources */,
 				F549432F1EF2255A00243D86 /* LoginController.swift in Sources */,
 				F549431D1EF21ED100243D86 /* AppDelegate.swift in Sources */,
 			);
